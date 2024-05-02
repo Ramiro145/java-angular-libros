@@ -1,0 +1,10 @@
+<div class="header">
+    <span *ngIf="!estaAutenticado()" class="headerLink" routerLink="/login">Login</span>
+    <span *ngIf="estaAutenticado()" class="headerLink" (click)="logout()">Logout</span>
+    <span class="headerLink" *ngIf="rol =='ROLE_ADMIN'" routerLink="/admin">Admin</span>
+    <div *ngIf="estaAutenticado()" class="div-header">
+        <span routerLink = "/estudiantes">Estudiantes</span>
+        <span routerLink = "/materias">Materias</span>
+        <span routerLink = "/libros">Libros</span>
+    </div>
+</div>

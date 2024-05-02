@@ -1,0 +1,76 @@
+.contenedor{
+    padding: 50px 0;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #EEE;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 10px;
+    margin: 15px 5px;
+    background-color: #d8d8d8cd;
+    border-radius: 4px;
+    border: solid #eee;
+}
+
+.azul{
+    background-color: rgb(0, 67, 125)
+}
+
+.gris{
+    background-color: rgb(206, 199, 199)
+}
+button{
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-top: auto;
+    width: 60%;
+    cursor: pointer;
+    color: #EEE;
+}
+
+.titulo{
+    font-size: 25px;
+    font-weight: 800;
+    display: block;
+    margin: 5px;
+    color: rgb(0, 67, 125);
+}
+
+.autor{
+    margin: 5px;
+    font-size: 15px;
+    display: block;
+}
+
+.libro{
+    width: 300px;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #0d3a2c6e;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.prestado{
+    background-color: rgb(210, 99, 99);
+}
+.nombre{
+    font-style: italic;
+    font-size: small;
+    font-weight: 700;
+}
+
+.asignar{
+    display: block;
+    float: right;
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(0, 67, 125);
+}

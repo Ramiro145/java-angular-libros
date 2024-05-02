@@ -1,0 +1,17 @@
+<div class="contenedor">
+    <form (ngSubmit) = "autenticar()">
+        <label for="usuario">
+            Usuario
+            <input type="text" name="usuario" id="usuario" [(ngModel)] = "login.username">
+        </label>
+        <label for="contrasena">
+            Contraseña
+            <input type="password" name="contrasena" id="contrasena" [(ngModel)] = "login.password">
+        </label>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div *ngIf="this.invalido">
+        <p class="invalido">El ususario o la contraseña esta incorrecta</p>
+    </div>
+</div>

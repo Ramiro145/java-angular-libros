@@ -23,6 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "externalDependencies": [""],
             "outputPath": "dist/aplicacion-final",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -75,7 +76,8 @@
               "buildTarget": "aplicacion-final:build:production"
             },
             "development": {
-              "buildTarget": "aplicacion-final:build:development"
+              "buildTarget": "aplicacion-final:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -106,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
